@@ -45,3 +45,31 @@ img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
 @media (max-width:980px){.menu{display:none}.stats-grid,.cards,.gallery,.footer-grid{grid-template-columns:1fr 1fr}.split-grid,.cta-box{grid-template-columns:1fr;display:grid}.gallery-item.large{grid-column:auto}}
 @media (max-width:680px){.hero{min-height:auto}.hero-content{padding:54px 0 64px}.stats-grid,.cards,.gallery,.footer-grid{grid-template-columns:1fr}.gallery-item img,.gallery-item.large img{height:240px}.brand span{display:none}.brand img{width:52px}}
 .logo {height: 90px;margin-left: 20px;}
+.hero-brand{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:20px;
+  max-width:420px;
+}
+
+.hero-brand img{
+  width:70px;
+  height:auto;
+  border-radius:12px;
+  background:#fff;
+  padding:6px;
+}
+
+.hero-brand-text strong{
+  display:block;
+  font-size:1.4rem;
+  margin-bottom:4px;
+  color:#fff;
+}
+
+.hero-brand-text span{
+  display:block;
+  font-size:.9rem;
+  color:#b8c4d6;
+}
