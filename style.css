@@ -405,3 +405,16 @@ h2{font-size:clamp(2.2rem,4vw,4rem);line-height:1.02;letter-spacing:-.035em;marg
   .cta-premium .container{padding:46px 0}
   .footer-brand img{width:175px}
 }
+
+/* V5 contact form */
+.form label{display:block;margin-bottom:7px;color:#dce3ea;font-weight:700;font-size:.9rem}
+.form input:focus,.form textarea:focus{outline:none;border-color:rgba(242,122,43,.72);box-shadow:0 0 0 3px rgba(242,122,43,.10)}
+.form input:invalid:not(:placeholder-shown),.form textarea:invalid:not(:placeholder-shown){border-color:rgba(255,120,120,.45)}
+.form button:disabled{opacity:.65;cursor:wait;transform:none}
+.form-note strong{color:#b8c2cc;font-weight:700}
+.form-status{min-height:24px;margin-top:12px;font-size:.9rem;line-height:1.45}
+.form-status.success{color:#8bd3a5}
+.form-status.error{color:#ff9d9d}
+.form-honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}
+
+.form-hp{position:absolute!important;left:-10000px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important}

@@ -34,12 +34,14 @@
 
 <main><section class="page-hero"><div class="container"><span class="eyebrow">Контакти</span><h1>Пиши ни за твоя проект.</h1><p>Изпрати кратка информация за обекта и ще се свържем с теб за следващите стъпки.</p></div></section>
 <section class="section"><div class="container contact-grid">
-<div class="contact-box"><h3>NPG Electric</h3><p><strong>Телефон</strong><br><a href="tel:+359888277242">0888 277 242</a></p><p><strong>Имейл</strong><br><a href="mailto:electricnpg@gmail.com">electricnpg@gmail.com</a></p><p><strong>Обхват</strong><br>Работим в цялата страна</p><p><a href="https://wa.me/359888277242">WhatsApp</a> · <a href="viber://chat?number=%2B359888277242">Viber</a></p></div>
-<div class="contact-box"><form class="form" action="mailto:electricnpg@gmail.com" method="post" enctype="text/plain">
-<div><label>Име</label><input name="Име" required></div><div><label>Телефон</label><input name="Телефон" required></div>
-<div class="full"><label>Имейл</label><input type="email" name="Имейл"></div>
-<div class="full"><label>Съобщение</label><textarea name="Съобщение" required></textarea></div>
-<div class="full"><button class="btn btn-primary" type="submit">Изпрати запитване</button><div class="form-note">При изпращане ще се отвори вашата имейл програма. След активиране на фирмените имейли ще свържем формата директно към тях.</div></div>
+<div class="contact-box"><h3>NPG Electric</h3><p><strong>Телефон</strong><br><a href="tel:+359888277242">0888 277 242</a></p><p><strong>Имейл</strong><br><a href="mailto:office@npgelectric.bg">office@npgelectric.bg</a></p><p><strong>Обхват</strong><br>Работим в цялата страна</p><p><a href="https://wa.me/359888277242">WhatsApp</a> · <a href="viber://chat?number=%2B359888277242">Viber</a></p></div>
+<div class="contact-box"><form class="form" id="contact-form" novalidate>
+<div><label for="contact-name">Име</label><input id="contact-name" name="name" autocomplete="name" maxlength="100" required></div><div><label for="contact-phone">Телефон</label><input id="contact-phone" name="phone" type="tel" autocomplete="tel" maxlength="50" required></div>
+<div class="full"><label for="contact-email">Имейл</label><input id="contact-email" type="email" name="email" autocomplete="email" maxlength="150"></div>
+<div class="full"><label for="contact-message">Съобщение</label><textarea id="contact-message" name="message" maxlength="4000" required></textarea></div>
+<div class="form-hp" aria-hidden="true"><label for="company-website">Уебсайт</label><input id="company-website" name="companyWebsite" tabindex="-1" autocomplete="off"></div>
+<input type="hidden" id="form-started-at" name="startedAt" value="">
+<div class="full"><button class="btn btn-primary" id="contact-submit" type="submit">Изпрати запитване</button><div class="form-note">Запитването ще бъде изпратено директно до office@npgelectric.bg.</div><div id="form-status" class="form-status" role="status" aria-live="polite"></div></div>
 </form></div>
 </div></section></main>
 <footer class="footer">
@@ -53,7 +55,7 @@
         <p>Проектиране и изграждане на фотоволтаични централи, електроинсталации, мълниезащити и системи за съхранение на енергия в цяла България.</p>
       </div>
       <div><strong>Навигация</strong><p><a href="services.html">Услуги</a></p><p><a href="projects.html">Проекти</a></p><p><a href="about.html">За нас</a></p></div>
-      <div><strong>Контакт</strong><p><a href="tel:+359888277242">0888 277 242</a></p><p><a href="mailto:electricnpg@gmail.com">electricnpg@gmail.com</a></p><p>Работим в цялата страна</p></div>
+      <div><strong>Контакт</strong><p><a href="tel:+359888277242">0888 277 242</a></p><p><a href="mailto:office@npgelectric.bg">office@npgelectric.bg</a></p><p>Работим в цялата страна</p></div>
     </div>
     <div class="footer-bottom">© 2026 NPG Electric. Всички права запазени.</div>
   </div>
