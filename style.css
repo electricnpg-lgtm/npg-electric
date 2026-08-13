@@ -177,3 +177,54 @@ h2{font-size:clamp(2.2rem,4vw,4rem);line-height:1.02;letter-spacing:-.035em;marg
   .feature-media img{height:380px}.cta-band .container{display:block}.cta-band .btn{margin-top:22px}
   .form{grid-template-columns:1fr}.form .full{grid-column:auto}
 }
+
+
+/* V3 corporate refinement */
+.topbar{display:none!important}
+.site-header{background:rgba(7,10,14,.95);box-shadow:0 10px 34px rgba(0,0,0,.18)}
+.nav{height:104px;gap:34px}
+.brand-clean{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:3px;min-width:310px}
+.brand-logo-clean{width:220px;height:54px;object-fit:contain;object-position:left center}
+.brand-tagline{color:#9ba7b5;font-size:.76rem;letter-spacing:.02em;padding-left:4px}
+.menu{gap:32px}
+.menu-link{padding:40px 0;font-size:1rem;font-weight:700}
+.nav-cta{min-width:118px;min-height:50px;font-size:1rem}
+
+.hero{min-height:690px}
+.hero::after{background:linear-gradient(90deg,rgba(4,6,9,.76) 0%,rgba(4,6,9,.58) 38%,rgba(4,6,9,.20) 75%,rgba(4,6,9,.06) 100%),linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.31))}
+.hero-inner{grid-template-columns:1fr;padding:82px 0 106px;align-items:center}
+.hero-copy{max-width:790px}
+.hero-copy h1{font-size:clamp(3.25rem,5.4vw,4.9rem);line-height:.98;max-width:12ch;margin:20px 0 22px}
+.hero-copy p{max-width:66ch;font-size:1.08rem;color:#e1e6ed}
+.kicker{background:rgba(12,15,20,.42);border-color:rgba(242,122,43,.5);color:#ffd7c0}
+.hero-actions{margin-top:2px}
+.hero-strip{margin-top:-68px}
+.hero-strip .container{grid-template-columns:repeat(4,1fr)}
+.stat{padding:22px 24px;background:rgba(10,14,20,.94);border-color:rgba(255,255,255,.12)}
+.stat strong{font-size:1.75rem}
+.section{padding:112px 0}
+.section-head{margin-bottom:50px}
+.service-card{min-height:250px;padding:30px}
+.project-card.large{min-height:650px}
+.cta-band .container{padding:50px 0}
+
+@media(max-width:1000px){
+  .nav{height:84px}
+  .brand-clean{min-width:0}
+  .brand-logo-clean{width:170px;height:44px}
+  .brand-tagline{display:none}
+  .hero{min-height:650px}
+  .hero-inner{padding:66px 0 96px}
+  .hero-copy h1{font-size:clamp(3rem,8vw,4.4rem)}
+}
+@media(max-width:650px){
+  .nav{height:78px}
+  .brand-logo-clean{width:145px;height:40px}
+  .hero{min-height:620px}
+  .hero-inner{padding:56px 0 88px}
+  .hero-copy h1{font-size:clamp(2.7rem,13vw,3.95rem)}
+  .hero-copy p{font-size:1rem}
+  .hero-strip{margin-top:-54px}
+  .hero-strip .container{grid-template-columns:1fr 1fr}
+  .stat{padding:18px}
+}
